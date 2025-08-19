@@ -49,7 +49,6 @@ code {
 }
 
 @media (min-width: 2000px) {
-  /* For huge screens like Samsung 55-inch TVs */
   body {
     font-size: 1.8rem;
   }
