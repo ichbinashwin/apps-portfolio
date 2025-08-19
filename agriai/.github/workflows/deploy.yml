@@ -19,13 +19,13 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install
+        run: cd apps-portfolio/agriai && npm install
 
       - name: Build React app
-        run: npm run build
+        run: cd apps-portfolio/agriai && npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./apps-portfolio/agriai/build
