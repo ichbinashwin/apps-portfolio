@@ -2,7 +2,7 @@
   "name": "agriai",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ichbinashwin.github.io/apps-portfolio/agriai",
+  "homepage": "/apps-portfolio/agriai",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.7.0",
