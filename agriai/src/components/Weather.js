@@ -5,7 +5,7 @@ export default function Weather() {
     <div className="card mb-4">
       <div className="card-header bg-light fw-bold">🌤️ Weather Forecast (Demo)</div>
       <div className="card-body">
-        <p>Today: Sunny, 23°C</p>
+        <p>Today: Sunny, 22°C</p>
         <p>Tomorrow: Rain expected, 28°C</p>
       </div>
     </div>
