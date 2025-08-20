@@ -16,6 +16,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Debug repo structure
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Top-level files:"
+          ls -la
+          echo "Inside apps-portfolio/agriai:"
+          ls -la apps-portfolio/agriai || echo "Directory not found"
+          echo "Looking for package-lock.json:"
+          ls -la apps-portfolio/agriai/package-lock.json || echo "package-lock.json missing"
+          
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
