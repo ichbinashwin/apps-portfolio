@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/apps-portfolio/agriai/static/css/main.4eaed75a.css",
+    "main.js": "/apps-portfolio/agriai/static/js/main.8e86e42a.js",
+    "static/js/453.61fdd4ed.chunk.js": "/apps-portfolio/agriai/static/js/453.61fdd4ed.chunk.js",
+    "index.html": "/apps-portfolio/agriai/index.html",
+    "main.4eaed75a.css.map": "/apps-portfolio/agriai/static/css/main.4eaed75a.css.map",
+    "main.8e86e42a.js.map": "/apps-portfolio/agriai/static/js/main.8e86e42a.js.map",
+    "453.61fdd4ed.chunk.js.map": "/apps-portfolio/agriai/static/js/453.61fdd4ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4eaed75a.css",
+    "static/js/main.8e86e42a.js"
+  ]
+}
