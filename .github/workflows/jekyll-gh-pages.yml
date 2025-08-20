@@ -54,5 +54,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: agriai/build
+          destination_dir: agriai   # peaceiris/actions-gh-pages allows this
           publish_branch: gh-pages
           force_orphan: true   # makes sure old files don't linger
