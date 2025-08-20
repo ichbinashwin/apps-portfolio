@@ -22,24 +22,24 @@ jobs:
           pwd
           echo "Top-level files:"
           ls -la
-          echo "Inside apps-portfolio/agriai:"
-          ls -la apps-portfolio/agriai || echo "Directory not found"
+          echo "Inside agriai:"
+          ls -la agriai || echo "Directory not found"
           echo "Looking for package-lock.json:"
-          ls -la apps-portfolio/agriai/package-lock.json || echo "package-lock.json missing"
+          ls -la agriai/package-lock.json || echo "package-lock.json missing"
           
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: apps-portfolio/agriai/package-lock.json
+          cache-dependency-path: agriai/package-lock.json
 
       - name: Install dependencies
-        working-directory: apps-portfolio/agriai
+        working-directory: agriai
         run: npm install
 
       - name: Build React app
-        working-directory: apps-portfolio/agriai
+        working-directory: agriai
         run: npm run build
 
       # Save build artifacts for debugging or later jobs (optional)
@@ -47,12 +47,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: production-files
-          path: apps-portfolio/agriai/build
+          path: agriai/build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: apps-portfolio/agriai/build
+          publish_dir: agriai/build
           publish_branch: gh-pages
           force_orphan: true   # makes sure old files don't linger
